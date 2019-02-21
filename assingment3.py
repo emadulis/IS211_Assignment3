@@ -32,7 +32,7 @@ def processData(url_file):
         >>> processData(runtest)
         There's a total of 10000 page hits today.
         Images account for 96.69 % percent of all requests.
-        Google Chrome is browser top used with 331 hits.
+        Google Chrome is the top used browser with 331 hits.
     """
 
     readpage = csv.reader(url_file)
@@ -72,7 +72,7 @@ def processData(url_file):
 
     report = ("There's a total of {} page hits today.\n"
               "Images account for {} % percent of all requests.\n"
-              "{} is browser top used with {} hits.").format(linecount,
+              "{} is the top used browser with {} hits.").format(linecount,
                                                              image_pct,
                                                              top_name,
                                                              top_browser)
